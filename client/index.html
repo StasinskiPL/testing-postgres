@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sql</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav>
+        <h2>Postgres Testing</h2>
+    </nav>
+    <main>
+        <section>
+            <h1>Add User</h1>
+            <form id="form">
+                <div>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName">
+                </div>
+
+                <div>
+                <label for="lastName">last Name:</label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+                <div>
+                <label for="age">Age:</label>
+                <input type="number" step="1"  id="age" name="age">
+            </div>
+                
+            <button type="submit" id="btn">Submit</button>
+                
+            </form>
+            <button id="fetch">Fetch Users</button>
+        </section>
+        <section id="users"></section>
+    </main>
+    
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="app.js" type="module" defer></script>
+</html>
